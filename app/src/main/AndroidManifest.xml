@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ensiasd.tp2">
+
+    <application
+        android:allowBackup="true"
+        android:label="TP2 Widgets Android"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:supportsRtl="true">
+
+        <!-- Main Menu Activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Exercice 1 -->
+        <activity android:name=".ex1.Ex1InscriptionActivity"
+            android:label="Ex1 : Inscription"/>
+
+        <!-- Exercice 2 -->
+        <activity android:name=".ex2.Ex2RendezVousActivity"
+            android:label="Ex2 : Rendez-Vous"/>
+
+        <!-- Exercice 3 -->
+        <activity android:name=".ex3.Ex3CatalogueActivity"
+            android:label="Ex3 : Catalogue"/>
+
+        <!-- Exercice 4 -->
+        <activity android:name=".ex4.Ex4DashboardActivity"
+            android:label="Ex4 : Tableau de Bord"/>
+
+        <!-- Exercice 5 -->
+        <activity android:name=".ex5.Ex5ScrollDialogActivity"
+            android:label="Ex5 : ScrollView et Dialog"/>
+
+    </application>
+
+</manifest>

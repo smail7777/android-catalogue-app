@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ctx_voir_details"
+        android:title="Voir Détails"/>
+
+    <item
+        android:id="@+id/ctx_modifier"
+        android:title="Modifier"/>
+
+    <item
+        android:id="@+id/ctx_supprimer"
+        android:title="Supprimer"/>
+
+</menu>

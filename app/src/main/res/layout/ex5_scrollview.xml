@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conditions Générales d'Utilisation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#FFFFFF"/>
+
+    <!-- ScrollView avec texte long -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvContenuLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#424242"
+            android:lineSpacingExtra="4dp"
+            android:text="Article 1 – Objet\nLes présentes conditions générales d'utilisation ont pour objet de définir les modalités et conditions d'utilisation des services proposés sur cette application, ainsi que de définir les droits et obligations des parties dans ce cadre.\n\nArticle 2 – Accès aux services\nL'application est accessible à tout utilisateur disposant d'un accès à Internet. Tous les coûts afférents à l'accès aux services, que ce soient les frais matériels, logiciels ou d'accès à Internet, sont exclusivement à la charge de l'utilisateur.\n\nArticle 3 – Collecte de données\nNous collectons certaines données personnelles vous concernant. Ces données sont traitées conformément à notre politique de confidentialité, disponible dans les paramètres de l'application. Vous disposez d'un droit d'accès, de rectification et de suppression de vos données.\n\nArticle 4 – Propriété intellectuelle\nTous les contenus présents sur cette application sont protégés par le droit de la propriété intellectuelle. Toute reproduction, modification, publication ou adaptation est strictement interdite sans accord préalable.\n\nArticle 5 – Responsabilité\nL'application ne pourra être tenue responsable des dommages directs ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser les services proposés. L'utilisateur reconnaît utiliser ces services sous sa propre responsabilité.\n\nArticle 6 – Modification des CGU\nNous nous réservons le droit de modifier les présentes conditions générales à tout moment. Les modifications entrent en vigueur dès leur publication dans l'application. Il vous appartient de consulter régulièrement les CGU.\n\nArticle 7 – Droit applicable\nLes présentes conditions générales sont régies par le droit marocain. Tout litige sera soumis à la juridiction compétente de Taroudant."/>
+
+    </ScrollView>
+
+    <!-- Bouton Voir Plus -->
+    <Button
+        android:id="@+id/btnVoirPlus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir Plus"
+        android:backgroundTint="#1A237E"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:padding="14dp"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>

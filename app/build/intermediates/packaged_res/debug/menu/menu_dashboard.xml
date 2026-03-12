@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_modifier_profil"
+        android:title="Modifier Profil"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_deconnexion"
+        android:title="Déconnexion"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_aide"
+        android:title="Aide"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ensiasd.tp2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <permission
+        android:name="com.ensiasd.tp2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ensiasd.tp2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:label="TP2 Widgets Android"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+
+        <!-- Main Menu Activity -->
+        <activity
+            android:name="com.ensiasd.tp2.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Exercice 1 -->
+        <activity
+            android:name="com.ensiasd.tp2.ex1.Ex1InscriptionActivity"
+            android:label="Ex1 : Inscription" />
+
+        <!-- Exercice 2 -->
+        <activity
+            android:name="com.ensiasd.tp2.ex2.Ex2RendezVousActivity"
+            android:label="Ex2 : Rendez-Vous" />
+
+        <!-- Exercice 3 -->
+        <activity
+            android:name="com.ensiasd.tp2.ex3.Ex3CatalogueActivity"
+            android:label="Ex3 : Catalogue" />
+
+        <!-- Exercice 4 -->
+        <activity
+            android:name="com.ensiasd.tp2.ex4.Ex4DashboardActivity"
+            android:label="Ex4 : Tableau de Bord" />
+
+        <!-- Exercice 5 -->
+        <activity
+            android:name="com.ensiasd.tp2.ex5.Ex5ScrollDialogActivity"
+            android:label="Ex5 : ScrollView et Dialog" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.ensiasd.tp2.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

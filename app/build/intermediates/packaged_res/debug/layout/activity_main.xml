@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TP2 – Widgets Android"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:gravity="center"
+        android:paddingBottom="32dp"/>
+
+    <Button android:id="@+id/btnEx1"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Exercice 1 : Formulaire d'Inscription"
+        android:backgroundTint="#1A237E" android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button android:id="@+id/btnEx2"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Exercice 2 : Planification Rendez-Vous"
+        android:backgroundTint="#1A237E" android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button android:id="@+id/btnEx3"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Exercice 3 : Catalogue de Produits"
+        android:backgroundTint="#1A237E" android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button android:id="@+id/btnEx4"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Exercice 4 : Tableau de Bord"
+        android:backgroundTint="#1A237E" android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button android:id="@+id/btnEx5"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Exercice 5 : ScrollView et Dialog"
+        android:backgroundTint="#1A237E" android:textColor="#FFFFFF"/>
+
+</LinearLayout>
